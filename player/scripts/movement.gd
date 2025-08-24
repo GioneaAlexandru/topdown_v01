@@ -43,5 +43,14 @@ func UpdateState() -> bool:
 	
 	
 func UpdateAnimation() -> void:
-	animation_player.play(state + "_" + "down" )
+	animation_player.play(state + "_" + AnimDirection() )
 	pass
+
+
+func AnimDirection() -> String:
+	if cardinal_direction == Vector2.DOWN:
+		return "down"
+	elif cardinal_direction == Vector2.UP:
+		return "up"
+	else:
+		return "side"
