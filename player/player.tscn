@@ -138,13 +138,14 @@ _data = {
 }
 
 [node name="player" type="CharacterBody2D"]
+collision_mask = 16
 script = ExtResource("1_rkbax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_3h184")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(229, 132)
+position = Vector2(1, -20)
 texture = ExtResource("1_oul6g")
 hframes = 21
 
