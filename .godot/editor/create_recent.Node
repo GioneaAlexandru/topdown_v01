@@ -1,6 +1,5 @@
 Node
 player_state_machine
-state_class
 AnimationPlayer
 Sprite2D
 CollisionShape2D

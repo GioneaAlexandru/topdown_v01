@@ -6,3 +6,4 @@ res://player/scripts/player_state_machine.gd
 res://player/scripts/script_template.gd
 res://player/scripts/player.gd
 res://player/scripts/state_idle.gd
+res://player/scripts/state_walk.gd
