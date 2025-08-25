@@ -1,7 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://cfnhlqkirnc5e"]
+[gd_scene load_steps=14 format=3 uid="uid://cfnhlqkirnc5e"]
 
 [ext_resource type="Texture2D" uid="uid://c3kq6ktljmqcb" path="res://sprites_all/ExamplePlayerSprite.png" id="1_oul6g"]
-[ext_resource type="Script" uid="uid://sf4381g6d00f" path="res://player/scripts/movement.gd" id="1_rkbax"]
+[ext_resource type="Script" uid="uid://sf4381g6d00f" path="res://player/scripts/player.gd" id="1_rkbax"]
+[ext_resource type="Script" uid="uid://bxxg5sdaunbkc" path="res://player/scripts/player_state_machine.gd" id="3_g1dw6"]
+[ext_resource type="Script" uid="uid://c4etvlujsqbov" path="res://player/scripts/state_idle.gd" id="4_yw30f"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3h184"]
 
@@ -149,3 +151,10 @@ hframes = 21
 libraries = {
 &"": SubResource("AnimationLibrary_yw30f")
 }
+
+[node name="state_machine" type="Node" parent="."]
+script = ExtResource("3_g1dw6")
+metadata/_custom_type_script = "uid://bxxg5sdaunbkc"
+
+[node name="idle" type="Node" parent="state_machine"]
+script = ExtResource("4_yw30f")

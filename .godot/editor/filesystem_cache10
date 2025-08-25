@@ -1,11 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1756105138
+::res://::1756107884
 icon.svg::CompressedTexture2D/CompressedTexture2D::2011129937679670135::1756077507::1756060009::1::::<><><>0<>0<>5dfc9031a55c64ea21797a02c28ed929<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-sandbox.tscn::PackedScene::4868665964146087868::1756079752::0::1::::<><><>0<>0<><>::uid://cfnhlqkirnc5e::::res://player/player.tscn
-::res://player/::1756079752
-player.tscn::PackedScene::5151068015269822080::1756079752::0::1::::<><><>0<>0<><>::uid://c3kq6ktljmqcb::::res://sprites_all/ExamplePlayerSprite.png<>uid://sf4381g6d00f::::res://player/scripts/movement.gd
-::res://player/scripts/::1756079747
-movement.gd::GDScript::1275533643024102531::1756079747::0::1::::movement<>CharacterBody2D<><>0<>0<><>::
+sandbox.tscn::PackedScene::4868665964146087868::1756107884::0::1::::<><><>0<>0<><>::uid://cfnhlqkirnc5e::::res://player/player.tscn
+::res://player/::1756138162
+player.tscn::PackedScene::5151068015269822080::1756138225::0::1::::<><><>0<>0<><>::uid://c3kq6ktljmqcb::::res://sprites_all/ExamplePlayerSprite.png<>uid://sf4381g6d00f::::res://player/scripts/movement.gd<>uid://b5fpb6ico1byc::::res://player/scripts/state.gd
+::res://player/scripts/::1756138162
+movement.gd::GDScript::1275533643024102531::1756138213::0::1::::player<>CharacterBody2D<><>0<>0<><>::
+player_state_machine.gd::GDScript::4048663601566921410::1756137858::0::1::::player_state_machine<>Node<><>0<>0<><>::
+script_template.gd::GDScript::6994562300074955980::1756131372::0::1::::<>RefCounted<><>0<>0<><>::
+state.gd::GDScript::4503322062982666534::1756133116::0::1::::state<>Node<><>0<>0<><>::
 ::res://sprites_all/::1756077507
 AttackSprite01 (1).png::CompressedTexture2D/CompressedTexture2D::1565405786624624945::1756077507::1756060108::1::::<><><>0<>0<>6493f3d4389c7555630c379dd33ac9b2<>res://.godot/imported/AttackSprite01 (1).png-c27ef571751ef5a89668cfabc6b0a259.ctex::
 AttackSprite01.png::CompressedTexture2D/CompressedTexture2D::6819035467573559281::1756077507::1756060108::1::::<><><>0<>0<>732742f3deb4cde6c48e14b8edb9c126<>res://.godot/imported/AttackSprite01.png-d5dd606f580a5ad5589fae350acf6ccc.ctex::
