@@ -1,7 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbmohm8h5eyym"]
+[gd_scene load_steps=4 format=3 uid="uid://cbmohm8h5eyym"]
 
 [ext_resource type="PackedScene" uid="uid://cfnhlqkirnc5e" path="res://player/player.tscn" id="1_3h184"]
+[ext_resource type="PackedScene" uid="uid://dfepcl0au8l4d" path="res://tile_maps/grass_01.tscn" id="2_cojph"]
+
+[sub_resource type="GDScript" id="GDScript_cojph"]
+script/source = "extends TileMapLayer
+
+func _ready():
+	print(\"TileMapLayer used cells: \", get_used_cells().size())
+"
 
 [node name="sandbox" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_3h184")]
+
+[node name="Grass01" parent="." instance=ExtResource("2_cojph")]
+position = Vector2(0, 2)
+script = SubResource("GDScript_cojph")
